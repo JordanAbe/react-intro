@@ -1,0 +1,8 @@
+.border-datos{
+    border-bottom: 3px solid red;
+}
+
+.border-datos:hover{
+    background-color: yellow;
+    border-bottom: 3px solid green;
+}
