@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Componente from './Componente';
+import Click from './Click';
 import style from './style.css';
 
 
@@ -21,6 +22,8 @@ class App extends Component {
         <ul>
         {frutas.map(fruta => <li key={fruta}>{fruta}</li>)}
         </ul>
+        <h1>Clicks</h1>
+        <Click/>
       </div>
     );
   }
