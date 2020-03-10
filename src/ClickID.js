@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Nav from './layout/Nav';
 
-class Click extends Component{
+class ClickID extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -12,6 +12,7 @@ class Click extends Component{
         return (
             <Nav>
                 <div>
+                    <div>click ID</div>
                     <span>{this.state.clicks}</span>
                     <button onClick={() => {
                         console.log(this.state.clicks)
@@ -26,4 +27,4 @@ class Click extends Component{
     }
 }
 
-export default Click;
+export default ClickID;
