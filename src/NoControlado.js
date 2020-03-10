@@ -12,8 +12,7 @@ class NoControlado extends Component {
         const { onClickAceptar} = this.props;
         return (
             <div>
-            <h1>Hamburguesa</h1>
-            <h3>Elije tamaño:</h3>
+            <h3>Componente NO controlado</h3>
             <ul>
                 <li><input type="radio" name="tamano" onChange={e => this.setState({tamaño: e.target.value})} checked={tamaño === 'grande'} value="grande"/>Grande</li>
                 <li><input type="radio" name="tamano" onChange={e => this.setState({tamaño: e.target.value})} checked={tamaño === 'mediano'} value="mediano"/>Mediano</li>

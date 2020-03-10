@@ -5,8 +5,7 @@ function Controlado(props) {
     const { tamaño, onChangeTamaño, onClickAceptar } = props;
     return (
         <div>
-            <h1>Hamburguesa</h1>
-            <h3>Elije tamaño:</h3>
+            <h3>Componente controlado</h3>
             <ul>
                 <li><input type="radio" name="taman" onChange={e => onChangeTamaño(e.target.value)} checked={tamaño === 'grande'} value="grande"/>Grande</li>
                 <li><input type="radio" name="taman" onChange={e => onChangeTamaño(e.target.value)} checked={tamaño === 'mediano'} value="mediano"/>Mediano</li>

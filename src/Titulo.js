@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 
-class Componente extends Component {
+class Titulo extends Component {
     render(){
         return (
             <div style={{backgroundColor:this.props.color}}>{this.props.titulo}</div>
         )
     }
 }
-Componente.defaultProps = {
+Titulo.defaultProps = {
     color: 'gray'
 }
-export default Componente;
+export default Titulo;
