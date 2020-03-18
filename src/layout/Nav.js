@@ -30,6 +30,7 @@ function Nav(props){
                 <li><Link to="/stateful">Stateful</Link></li>
                 <li><Link to="/hook">Hook</Link></li>
                 <li><Link to="/custom-hook">Custom Hook</Link></li>
+                <li><Link to="/hook-form">Custom Hook form</Link></li>
             </ul>
             { false &&
                 <Redirect to="ciclo" />
