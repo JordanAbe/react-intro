@@ -8,7 +8,9 @@ import TiposComponentes from './tipos_componentes/TiposComponentes';
 import Click from './clicks/Click';
 import ClickID from './clicks/ClickID';
 import Stateful from './Stateful/Stateful';
-import Hook from './hooks/index';
+import Hook from './hooks/useState/index';
+import CustomHook from './hooks/custom/app';
+
 
 function New (){
     return (
@@ -23,7 +25,8 @@ function New (){
             <Route path="/clickme" component={Click} />
             
             <Route path="/stateful" component={Stateful} />
-            <Route path="/ho" component={Hook} />
+            <Route path="/hook" component={Hook} />
+            <Route path="/custom-hook" component={CustomHook} />
         </Switch>
     </BrowserRouter>
     )

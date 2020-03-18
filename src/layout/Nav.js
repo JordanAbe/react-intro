@@ -7,8 +7,8 @@ import  { Link, Redirect, withRouter } from 'react-router-dom';
 function Nav(props){
     const { children, history, location, match } = props;
 
-    console.log('location ', location);
-    console.log('match ', match);
+    // console.log('location ', location);
+    // console.log('match ', match);
 
     return (
         <div>
@@ -28,7 +28,8 @@ function Nav(props){
                 <li><Link to="/clickme">Clickme</Link></li>
                 <li><Link to="/clickme/123">ClickmeID</Link></li>
                 <li><Link to="/stateful">Stateful</Link></li>
-                <li><Link to="/ho">Hook useState</Link></li>
+                <li><Link to="/hook">Hook</Link></li>
+                <li><Link to="/custom-hook">Custom Hook</Link></li>
             </ul>
             { false &&
                 <Redirect to="ciclo" />
