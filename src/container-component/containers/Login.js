@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Pagina from './../components/Login';
+import Pagina from '../components/Login';
 
 class Contenedor extends Component{
     constructor(props){

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Nav from './../layout/Nav';
+import Nav from '../../layout/Nav';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 

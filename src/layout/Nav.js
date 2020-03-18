@@ -28,6 +28,7 @@ function Nav(props){
                 <li><Link to="/clickme">Clickme</Link></li>
                 <li><Link to="/clickme/123">ClickmeID</Link></li>
                 <li><Link to="/stateful">Stateful</Link></li>
+                <li><Link to="/ho">Hook useState</Link></li>
             </ul>
             { false &&
                 <Redirect to="ciclo" />

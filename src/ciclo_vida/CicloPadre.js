@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Ciclo from './Ciclo';
-import Nav from './layout/Nav';
+import Nav from '../layout/Nav';
 
 class CicloPadre extends Component{
     constructor(props){

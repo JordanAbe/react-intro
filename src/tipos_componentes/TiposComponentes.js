@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Controlado from './Controlado';
 import NoControlado from './NoControlado';
-import Nav from './layout/Nav';
+import Nav from '../layout/Nav';
 
 class TiposComponentes extends Component {
     constructor(props){

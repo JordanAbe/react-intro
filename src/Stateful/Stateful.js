@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Nav from './layout/Nav';
+import Nav from '../layout/Nav';
 
 class Stateful extends Component{
     constructor(props){

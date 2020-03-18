@@ -1,13 +1,7 @@
 import React, {Component} from 'react';
-import Titulo from './Titulo';
-import Click from './Click';
-import Stateful from './Stateful';
-import Controlado from './Controlado';
-import NoControlado from './NoControlado';
-import Ciclo from './Ciclo';
-import Nav from './layout/Nav';
-import style from './style.css';
-import { throwStatement } from '@babel/types';
+import Titulo from '../defaultprops/Titulo';
+import Nav from '../layout/Nav';
+import './style.css';
 
 class App extends Component {
 
