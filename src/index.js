@@ -11,6 +11,7 @@ import Stateful from './Stateful/Stateful';
 import Hook from './hooks/useState/index';
 import CustomHook from './hooks/custom-api/app';
 import CustomHookForm from './hooks/custom-form/index';
+import CustomHookEvents from './hooks/custom-events/index';
 
 
 function New (){
@@ -29,6 +30,7 @@ function New (){
             <Route path="/hook" component={Hook} />
             <Route path="/custom-hook" component={CustomHook} />
             <Route path="/hook-form" component={CustomHookForm} />
+            <Route path="/hook-events" component={CustomHookEvents} />
         </Switch>
     </BrowserRouter>
     )
