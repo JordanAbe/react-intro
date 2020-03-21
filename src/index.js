@@ -13,6 +13,7 @@ import CustomHook from './hooks/custom-api/app';
 import CustomHookForm from './hooks/custom-form/index';
 import CustomHookEvents from './hooks/custom-events/index';
 import Formik from './formik/app';
+import Todo from './todo/containers/todo';
 
 
 function New (){
@@ -33,6 +34,7 @@ function New (){
             <Route path="/hook-form" component={CustomHookForm} />
             <Route path="/hook-events" component={CustomHookEvents} />
             <Route path="/formik" component={Formik} />
+            <Route path="/todo" component={Todo} />
         </Switch>
     </BrowserRouter>
     )

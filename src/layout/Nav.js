@@ -33,6 +33,7 @@ function Nav(props){
                 <li><Link to="/hook-form">Custom Hook form</Link></li>
                 <li><Link to="/hook-events">Custom Hook events</Link></li>
                 <li><Link to="/formik">Formik</Link></li>
+                <li><Link to="/todo">Todo</Link></li>
             </ul>
             { false &&
                 <Redirect to="ciclo" />
