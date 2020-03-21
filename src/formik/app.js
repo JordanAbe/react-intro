@@ -1,5 +1,6 @@
 import React from 'react';
 import { withFormik, Field, ErrorMessage, Form } from 'formik';
+import Nav from '../layout/Nav';
 import './style.scss';
 
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -11,33 +12,36 @@ function MyForm(props) {
     } = props;
 
     return (
-        <Form>
-            <div className="row">
-                Email:
-                <Field name="email" type="email" className="input" />
-                <ErrorMessage name="email">
-                    {message => <div className="error">{message}</div>}
-                </ErrorMessage>
-            </div>
+        <div>
+            <Nav/>
+            <Form>
+                <div className="row">
+                    Email:
+                    <Field name="email" type="email" className="input" />
+                    <ErrorMessage name="email">
+                        {message => <div className="error">{message}</div>}
+                    </ErrorMessage>
+                </div>
 
-            <div className="row">
-                Password:
-                <Field name="password" type="password" className="input" />
-                <ErrorMessage name="password">
-                    {message => <div className="error">{message}</div>}
-                </ErrorMessage>
-            </div>
+                <div className="row">
+                    Password:
+                    <Field name="password" type="password" className="input" />
+                    <ErrorMessage name="password">
+                        {message => <div className="error">{message}</div>}
+                    </ErrorMessage>
+                </div>
 
-            <div className="row">
-                <button
-                    type="submit"
-                    className={`submit ${isSubmitting || !isValid ? 'disabled' : ''}`}
-                    disabled={isSubmitting || !isValid}
-                >
-                    Submit
-                </button>
-            </div>
-        </Form>
+                <div className="row">
+                    <button
+                        type="submit"
+                        className={`submit ${isSubmitting || !isValid ? 'disabled' : ''}`}
+                        disabled={isSubmitting || !isValid}
+                    >
+                        Submit
+                    </button>
+                </div>
+            </Form>
+        </div>
     );
 }
 
